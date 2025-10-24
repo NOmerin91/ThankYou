@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Ucapan Terima Kasih</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+            animation: cardAppear 0.6s ease;
+        }
+
+        @keyframes cardAppear {
+            from {
+                opacity: 0;
+                transform: scale(0.9) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 50px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .floating-hearts {
+            position: absolute;
+            font-size: 2em;
+            opacity: 0.2;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .heart1 { top: 10px; left: 20px; animation-delay: 0s; }
+        .heart2 { top: 40px; right: 30px; animation-delay: 1s; }
+        .heart3 { bottom: 20px; left: 40px; animation-delay: 2s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .main-icon {
+            width: 400px;
+            height: 220px;
+            margin-bottom: 15px;
+            animation: bounce 1s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .card-header h1 {
+            font-size: 2.5em;
+            color: #2193b0;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .card-header .subtitle {
+            font-size: 1.2em;
+            color: #555;
+            font-style: italic;
+        }
+
+        .card-body {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .recipient {
+            font-size: 1.3em;
+            color: #2193b0;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .message {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        .signature {
+            text-align: right;
+            font-size: 1.1em;
+            color: #666;
+            font-style: italic;
+            margin-top: 30px;
+        }
+
+        .signature strong {
+            color: #2193b0;
+            font-style: normal;
+        }
+
+        .decorative-line {
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #a8edea, #fed6e3);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+
+        .card-footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #999;
+        }
+
+        @media (max-width: 600px) {
+            .card-header h1 {
+                font-size: 2em;
+            }
+
+            .main-icon {
+                font-size: 4em;
+            }
+
+            .card-body {
+                padding: 30px 25px;
+            }
+
+            .message {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <div class="floating-hearts heart1">💝</div>
+            <div class="floating-hearts heart2">💖</div>
+            <div class="floating-hearts heart3">💗</div>
+            
+            <img class="main-icon" src="WhatsApp Image 2025-10-24 at 15.54.26_d94bde09.jpg"
+            ">
+            <h1>Thank You</h1>
+            <p class="subtitle"></p>
+        </div>
+
+        <div class="card-body">
+            <p class="recipient">Dear My Ria,</p>
+            
+            <div class="decorative-line"></div>
+
+            <p class="message">
+                Terima kasih sudah menjadi rumah bagi hatiku. Di dunia yang sering berubah, kamu adalah hal yang paling menakjubkan. Kamu adalah ketenangan di tengah ributnya hidup, dan pelukanmu adalah tempat paling aman di bumi ini.
+            </p>
+
+            <p class="message">
+               Terima kasih karena selalu menggenggam tanganku, bahkan saat dunia terasa dingin.
+
+            <div class="decorative-line"></div>
+
+            <div class="signature">
+                <p>Please Hold My Hand ya?,</p>
+                <p><strong>❤️ From Your Black Kitty</strong></p>
+            </div>
+        </div>
+
+        <div class="card-footer">
+            💌 Made From My Heart To You 💌
+        </div>
+    </div>
+</body>
+</html>
